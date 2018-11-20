@@ -1,4 +1,4 @@
-;Ethan Dyer 10/14/2018 253
+;Ethan Dyer 10/14/2018 
 ;Purpose: Create an program that prints all fibonacci upto and including n where n is set by the user    
 
 org 100h
