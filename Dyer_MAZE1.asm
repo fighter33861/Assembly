@@ -1,6 +1,5 @@
 ;Ethan Dyer
 ;11/2/2018
-;CIS 253
 ;Purpose: draw a maze and be able to move in to reach a goal. 
 
 org 100h 
@@ -36,7 +35,7 @@ PROC DRAW
    mov BH,0
    mov BL,0 
    lea SI,maze
-   mov CX,csize ; set up initial conDItions
+   mov CX,csize ; set up initial conditions
 nextrow:
      gotoxy BH,BL; set cursor to this location
      push CX; save CX for the loop
@@ -92,7 +91,7 @@ done:
     ret     
 ENDP ATOM 
  
-; nav stands for navigation, it controls the second part of the maze- movine through it till you hit the goal
+; nav stands for navigation, it controls the second part of the maze- moving through it till you hit the goal
 PROC NAV
     lea SI,maze
     add SI, 20
